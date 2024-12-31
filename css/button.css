@@ -1,0 +1,87 @@
+/* buttons stylesheet */
+
+button, .button {
+    min-height: 1cm;
+    min-width: 1cm;
+    border-radius: 0.5ex;
+    font-weight: bold;
+    padding: 1ex;
+    box-shadow: inset 1px 1px 0 0 white;
+    background-color: silver;
+    border: 1px solid gray;
+    color: black;
+}
+
+button, .button:active {
+    position:relative;
+    top:1px;
+}
+
+button, .shop {
+    box-shadow: inset 1px 1px 0 0 #bdf;
+    border: 1px solid #36b;
+    background-color: skyblue;
+    color: black;
+}
+
+button, .start {
+    box-shadow: inset 1px 1px 0 0 white;
+    background-color: #7f7;
+    border: 1px solid green;
+    color: black;
+}
+
+button, .red {
+    box-shadow: inset 1px 1px 0 0 white;
+    background-color: pink;
+    border: 1px solid red;
+    color: black;
+}
+
+button, .feedback {
+    box-shadow: inset 1px 1px 0 0 #bdf;
+    border: 1px solid #362;
+    background-color: skyblue;
+    color: black;
+}
+
+#gameshop {
+    position: fixed;
+    right: 1ex;
+    top: 1ex;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fire {
+    position: fixed;
+    right: 1ex;
+    bottom: 1ex;
+    /* top: calc(50% - 1cm); */
+    z-index: 5;
+
+    height: 2cm;
+    width: 2cm;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: #e11;
+    color: white;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 2cm;
+    outline: 0;
+    margin: 0;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+#fire.active {
+    background-color: #f66;
+    color: yellow;
+}

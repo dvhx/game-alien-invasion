@@ -1,0 +1,80 @@
+/* intro stylesheet */
+
+.intro {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url('../image/background.jpg');
+    background-color: black;
+    color: white;
+    padding: 1em;
+    font-size: medium;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.intro h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.intro img.icon {
+    width: 48px;
+    height: 48px;
+    margin: 2px;
+    margin-right: 1ex;
+    float: left;
+    image-rendering: optimizespeed;
+    image-rendering: pixelated;
+}
+
+.intro nav {
+    display: flex;
+    margin-bottom: 1ex;
+}
+.intro nav button {
+    flex: 1;
+    min-height: 1.3cm;
+    margin-left: 1ex;
+    margin-right: 1ex;
+}
+.intro nav .spacer {
+    flex: 1;
+}
+
+.intro textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+    min-height: 5em;
+    resize: none;
+}
+.intro .send {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2em;
+    display: block;
+}
+
+.intro .restart {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2em;
+    display: block;
+    background-color: green;
+}
+
+.intro .shop h3 {
+    margin: 0;
+    padding: 0;
+    font-size: x-small;
+    opacity: 0.5;
+}
+
